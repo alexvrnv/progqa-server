@@ -81,7 +81,7 @@ db.connect('mongodb://localhost:27017/progqa', function(err){
     if (err) {
         return console.log(err);
     }
-    app.listen(3012, function() {
+    app.listen(3000, function() {
         console.log('started')
     });
 });
