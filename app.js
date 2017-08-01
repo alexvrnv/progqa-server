@@ -77,7 +77,7 @@ safeRoutes.delete('/answers', answersController.delete);
 safeRoutes.put('/answers', answersController.put);
 
 
-db.connect('mongodb://localhost:27017/progqa', function(err){
+db.connect('mongodb://progqa:p3qsl62yazeto@ds129593.mlab.com:29593/progqa', function(err){
     if (err) {
         return console.log(err);
     }
