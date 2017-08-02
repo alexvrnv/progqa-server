@@ -81,8 +81,10 @@ db.connect('mongodb://progqa:p3qsl62yazeto@ds129593.mlab.com:29593/progqa', func
     if (err) {
         return console.log(err);
     }
-    app.listen(3000, function() {
+    var port = process.env.PORT || 8000
+    app.listen(port, function() {
         console.log('started')
     });
 });
+
 
